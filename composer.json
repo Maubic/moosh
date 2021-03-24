@@ -50,22 +50,6 @@
       "type": "package",
       "package": {
         "version": "dev-master",
-        "name": "moodlehq/moodle-local_wstemplate",
-        "source": {
-          "url": "https://github.com/moodlehq/moodle-local_wstemplate",
-          "type": "git",
-          "reference": "master"
-        },
-        "dist": {
-          "url": "https://github.com/moodlehq/moodle-local_wstemplate/archive/master.zip",
-          "type": "zip"
-        }
-      }
-    },
-    {
-      "type": "package",
-      "package": {
-        "version": "dev-master",
         "name": "danielneis/moodle-block_newblock",
         "source": {
           "url": "https://github.com/danielneis/moodle-block_newblock.git",
