@@ -220,21 +220,6 @@
             "type": "library"
         },
         {
-            "name": "moodlehq/moodle-local_wstemplate",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/moodlehq/moodle-local_wstemplate",
-                "reference": "add2ad0949e72f025c0aad36c4b822e8c6479d3b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/moodlehq/moodle-local_wstemplate/archive/master.zip",
-                "reference": "add2ad0949e72f025c0aad36c4b822e8c6479d3b"
-            },
-            "type": "library"
-        },
-        {
             "name": "moodlehq/moodle-mod_newmodule",
             "version": "dev-master",
             "source": {
@@ -246,20 +231,6 @@
                 "type": "zip",
                 "url": "https://github.com/moodlehq/moodle-mod_newmodule/archive/master.zip",
                 "reference": "e1f112be8842291259ece87de3000cd5f0e18711"
-            },
-            "type": "library"
-        },
-        {
-            "name": "mudrd8mz/moodle-tool_pluginskel",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mudrd8mz/moodle-tool_pluginskel",
-                "reference": "master"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/mudrd8mz/moodle-tool_pluginskel/archive/master.zip"
             },
             "type": "library"
         },
@@ -1842,13 +1813,11 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "mudrd8mz/moodle-tool_pluginskel": 20,
         "corneltek/getoptionkit": 20,
         "moodlehq/moodle-mod_newmodule": 20,
         "danielneis/moodle-block_newblock": 20,
         "jamiepratt/moodle-qtype_template": 20,
         "danielneis/moodle-gradereport_newgradereport": 20,
-        "moodlehq/moodle-local_wstemplate": 20,
         "yetanotherape/diff-match-patch": 20,
         "danielneis/moodle-gradeexport_newgradeexport": 20,
         "danielneis/moodle-message_newprocessor": 20,
