@@ -224,12 +224,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/moodlehq/moodle-local_wstemplate",
+                "url": "https://github.com/maubic/moodle-local_wstemplate",
                 "reference": "add2ad0949e72f025c0aad36c4b822e8c6479d3b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/moodlehq/moodle-local_wstemplate/archive/master.zip",
+                "url": "https://github.com/maubic/moodle-local_wstemplate/archive/master.zip",
                 "reference": "add2ad0949e72f025c0aad36c4b822e8c6479d3b"
             },
             "type": "library"
@@ -255,7 +255,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mudrd8mz/moodle-tool_pluginskel",
-                "reference": "master"
+                "reference": "main"
             },
             "dist": {
                 "type": "zip",
