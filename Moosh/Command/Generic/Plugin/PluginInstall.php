@@ -24,6 +24,7 @@ class PluginInstall extends MooshCommand
         $this->addOption('r|release:', 'Specify exact version to install e.g. 2019010700');
         $this->addOption('f|force', 'Force installation even if current Moodle version is unsupported.');
         $this->addOption('d|delete', 'If it already exists, automatically delete plugin before installing.');
+        $this->addOption('p|path', 'Path or URL to plugin');
     }
 
     private function init()
@@ -54,8 +55,15 @@ class PluginInstall extends MooshCommand
             $pluginversion  = $this->expandedOptions['release'];
         }
 
-        $version        = $this->get_plugin_to_install($pluginname, $pluginversion);
-        $downloadurl    = $version->downloadurl;
+        if (!empty($this->expandedOptions['path'])) {
+                $version = (object) [
+                        'version' => 'custom'
+                ];
+                $downloadurl    = $this->expandedOptions['release'];
+        } else {
+                $version        = $this->get_plugin_to_install($pluginname, $pluginversion);
+                $downloadurl    = $version->downloadurl;
+        }
 
         $split          = explode('_', $pluginname, 2);
         $type           = $split[0];
