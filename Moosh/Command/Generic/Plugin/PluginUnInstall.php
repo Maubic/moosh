@@ -120,9 +120,6 @@ class PluginUnInstall extends MooshCommand
                 print_r($pluginfo);
             }
 
-            echo "Deleting folder: {$pluginfo->rootdir} (if exists)". PHP_EOL ;
-            fulldelete($pluginfo->rootdir);
-
             // Reset op code caches.
             if (function_exists('opcache_reset')) {
                 opcache_reset();
@@ -131,6 +128,9 @@ class PluginUnInstall extends MooshCommand
             echo "Upgrade noncore.". PHP_EOL;
             upgrade_noncore(true);
 
+            echo "Deleting folder: {$pluginfo->rootdir} (if exists)". PHP_EOL ;
+            fulldelete($pluginfo->rootdir);
+            
             echo "Uninstalled :-) So long, and thanks for all the bugs.". PHP_EOL;
 
         }
